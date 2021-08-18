@@ -48,7 +48,7 @@ app.use(express.json());
 app.set('port', process.env.PORT || 3000);
 var server = app.listen(port, () => debug('Express server listening on port ' + port));
 console.log("Server running");
-app.get('/', function (req, res, next) {
+app.get('/test', function (req, res, next) {
     res.send({"status": 'Server Started'});
     
 });
